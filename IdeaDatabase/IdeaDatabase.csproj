@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC854B25-3773-43BC-B324-A4A886ABD6BD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IdeaDatabase</RootNamespace>
+    <AssemblyName>IdeaDatabase</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseGlobalApplicationHostFile />
+    <AssemblyVersion>2016.2.29.1141</AssemblyVersion>
+    <Use64BitIISExpress />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DocumentationFile>bin\IdeaDatabase.xml</DocumentationFile>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+    <NoWarn>1591</NoWarn>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK, Version=2.3.55.2, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.2.3.55.2\lib\net45\AWSSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.1.1\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CommonMark, Version=0.1.0.0, Culture=neutral, PublicKeyToken=001ef8810438905d, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonMark.NET.0.15.1\lib\net45\CommonMark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core">
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth2.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth2.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.Client">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth2.Client.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth2.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.ClientAuthorization">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth2.ClientAuthorization.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth2.ClientAuthorization.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Hpcs.DependencyInjector, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hpcs.DependencyInjector.1.1.0\lib\net45\Hpcs.DependencyInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Moq, Version=4.7.99.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.7.99\lib\net45\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.8\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.10.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.10.8\lib\net452\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.13\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.4.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.1.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Westwind.Globalization, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Westwind.Globalization.3.0.0\lib\net45\Westwind.Globalization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Westwind.Utilities, Version=3.0.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Westwind.Utilities.3.0.10\lib\net45\Westwind.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataContext\IdeaDatabase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IdeaDatabase.edmx</DependentUpon>
+      <LastGenOutput>IdeaDatabase.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataContext\IdeaDatabase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IdeaDatabase.edmx</DependentUpon>
+      <LastGenOutput>IdeaDatabase.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include=".ebextensions\setupaws.config" />
+    <Content Include="app.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <EntityDeploy Include="DataContext\IdeaDatabase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>IdeaDatabase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DataContext\IdeaDatabase.edmx.diagram">
+      <DependentUpon>IdeaDatabase.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\IdeaDatabaseDeploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ITG.pubxml" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Debug_2.0.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Report.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionConfig.cs" />
+    <Compile Include="Credentials\AccessCredentials.cs" />
+    <Compile Include="Credentials\ApplicationVersion.cs" />
+    <Compile Include="Credentials\LocaleCredentials.cs" />
+    <Compile Include="Credentials\RESTAPIAuthCredentials.cs" />
+    <Compile Include="Credentials\RESTAPILoginCredentials.cs" />
+    <Compile Include="Credentials\TokenCredentials.cs" />
+    <Compile Include="Credentials\LoginCredentials.cs" />
+    <Compile Include="DataContext\AdmSetting.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\EmailTemplate.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\Idea.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaArchiveHistory.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaAssignment.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaAttachment.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaCategory.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaChallenge.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaComment.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaCommentDiscussion.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaContributor.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaDatabase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IdeaDatabase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaDatabase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaDatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IdeaDatabase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaDatabaseDataContext.cs" />
+    <Compile Include="DataContext\IdeaIntellectualProperty.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaLog.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaStatusLog.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IdeaSubscriber.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\Ideatag.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\IIdeaDatabaseDataContext.cs" />
+    <Compile Include="DataContext\Role.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\RoleMapping.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\S3AttachmentContainer.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\User.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\UserAuthentication.cs">
+      <DependentUpon>IdeaDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\IdeaLogType.cs" />
+    <Compile Include="Enums\IdeaMethodType.cs" />
+    <Compile Include="Enums\MimeRequestType.cs" />
+    <Compile Include="Enums\AWSActions.cs" />
+    <Compile Include="IdeaDatabaseDataContext.cs" />
+    <Compile Include="Enums\APIMethods.cs" />
+    <Compile Include="Enums\EmailConsentType.cs" />
+    <Compile Include="Enums\GlobalSeverity.cs" />
+    <Compile Include="Enums\APILogLevel.cs" />
+    <Compile Include="Enums\EmailTemplateType.cs" />
+    <Compile Include="Enums\IdeaStatusType.cs" />
+    <Compile Include="Enums\Relation.cs" />
+    <Compile Include="Enums\ResponseStatusType.cs" />
+    <Compile Include="Enums\RoleTypes.cs" />
+    <Compile Include="Interchange\IdeaEmailToDetails.cs" />
+    <Compile Include="Interchange\EmailData.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaAttachmentInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaAttachmentsInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaCommentInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaBasicDetailsInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaContributorInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaMetricsInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaSearchInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaDetailsInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaDiscussionInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaReviewerInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaStatusInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeaInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIdeatagInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIIntellectualInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIRolesInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIStatusInterchange.cs" />
+    <Compile Include="Interchange\EasCustomerProfile.cs" />
+    <Compile Include="Interchange\HPPAuthenticationInterchange.cs" />
+    <Compile Include="FailureIdEncoder\Encoder.cs" />
+    <Compile Include="FailureIdEncoder\IEncode.cs" />
+    <Compile Include="FailureIdEncoder\FailureIdConstant.cs" />
+    <Compile Include="Enums\Parameter.cs" />
+    <Compile Include="Enums\CountryCodeType.cs" />
+    <Compile Include="Enums\LanguageCodeType.cs" />
+    <Compile Include="Enums\AccelerometerStatus.cs" />
+    <Compile Include="Enums\OperatingSystem.cs" />
+    <Compile Include="Enums\PrimaryUseType.cs" />
+    <Compile Include="Enums\RESTAPILocale.cs" />
+    <Compile Include="Enums\RESTAPIPlatform.cs" />
+    <Compile Include="Enums\SizeUnits.cs" />
+    <Compile Include="Interchange\CredentialsInterchange.cs" />
+    <Compile Include="Interchange\FailureIdInterchange.cs" />
+    <Compile Include="Interchange\RESTAPIUserInterchange.cs" />
+    <Compile Include="Requests\IdeaAttachmentRequest.cs" />
+    <Compile Include="Requests\IdeaSupportings.cs" />
+    <Compile Include="Requests\RestAPIAddCommentReplyRequest.cs" />
+    <Compile Include="Requests\RestAPIAddIdeaStateRequest.cs" />
+    <Compile Include="Requests\RestAPIAddIdeaCatrgoryRequest.cs" />
+    <Compile Include="Requests\RestAPIAddIntellectualRequest.cs" />
+    <Compile Include="Requests\RestAPIAddRolesRequest.cs" />
+    <Compile Include="Requests\RestAPIAddUserCommentRequest.cs" />
+    <Compile Include="Requests\RestAPIArchiveIdeaRequest.cs" />
+    <Compile Include="Requests\RestAPICatrgoryRequest.cs" />
+    <Compile Include="Requests\RestAPIIdeaSupportingRequest.cs" />
+    <Compile Include="Requests\RestAPISearchIdeaRequest.cs" />
+    <Compile Include="Requests\RestAPISearchUserRequest.cs" />
+    <Compile Include="Requests\RestAPIUpdateIdeaDraftRequest.cs" />
+    <Compile Include="Requests\RestAPIUpdateIdeaRequest.cs" />
+    <Compile Include="Requests\RestAPIUpdateIntellectRequest.cs" />
+    <Compile Include="Requests\RestAPIUpdateIntellectualRequest.cs" />
+    <Compile Include="Requests\RestAPIUpdateSensitiveRequest.cs" />
+    <Compile Include="Requests\SubmitIdeaRequest.cs" />
+    <Compile Include="Requests\SubmitIntellectualRequest.cs" />
+    <Compile Include="Requests\UpdateIntellectualRequest.cs" />
+    <Compile Include="Responses\CalltoAction.cs" />
+    <Compile Include="Responses\CustomDateTimeConverter.cs" />
+    <Compile Include="Responses\FailureIdEncoderResponse.cs" />
+    <Compile Include="Responses\Faults.cs" />
+    <Compile Include="Responses\LogMessages.cs" />
+    <Compile Include="Responses\RestAPIAddCommentReplyResponse.cs" />
+    <Compile Include="Responses\RestAPIAddIdeaCatrgoryResponse.cs" />
+    <Compile Include="Responses\RestAPIAddIdeaChallengeResponse.cs" />
+    <Compile Include="Responses\RestAPIAddIdeaStateResponse.cs" />
+    <Compile Include="Responses\RestAPIAddIntellectualResponse.cs" />
+    <Compile Include="Responses\RestAPIAddRoleResponse.cs" />
+    <Compile Include="Responses\RestAPIAddUserCommentResponse.cs" />
+    <Compile Include="Responses\RestAPIArchiveIdeaResponse.cs" />
+    <Compile Include="Responses\RestAPIDeleteAttachmentResponse.cs" />
+    <Compile Include="Responses\RestAPIDeleteIdeaCategoryResponce.cs" />
+    <Compile Include="Responses\RestAPIDeleteIdeaResponse.cs" />
+    <Compile Include="Responses\RestAPIDeleteIntellectResponse.cs" />
+    <Compile Include="Responses\RestAPIGetArchiveIdeaResponse.cs" />
+    <Compile Include="Responses\RestAPIGetAttachmentsResponse.cs" />
+    <Compile Include="Responses\RestAPIGetIdeaCategoryResponse.cs" />
+    <Compile Include="Responses\RestAPIGetIdeaChallengeResponse.cs" />
+    <Compile Include="Responses\RestAPIGetIdeaMetricsResponse.cs" />
+    <Compile Include="Responses\RestAPIGetIntellectResponse.cs" />
+    <Compile Include="Responses\RestAPIGetIntellectualResponse.cs" />
+    <Compile Include="Responses\RESTAPIGetRolesResponse.cs" />
+    <Compile Include="Responses\RestAPIGetStatusResponse.cs" />
+    <Compile Include="Responses\RestAPIGetUserIdeaStatusResponse.cs" />
+    <Compile Include="Responses\RestAPIGetUserIdeaResponse.cs" />
+    <Compile Include="Responses\RestAPISearchIdeaResponse.cs" />
+    <Compile Include="Responses\RestAPISearchUserResponse.cs" />
+    <Compile Include="Responses\RestAPIGetUserCommentsResponse.cs" />
+    <Compile Include="Responses\RestAPIUpdateCategoryResponse.cs" />
+    <Compile Include="Responses\RestAPIUpdateDraftResponse.cs" />
+    <Compile Include="Responses\RestAPIUpdateIdeaResponse.cs" />
+    <Compile Include="Responses\RestAPIUpdateIntellectResponse.cs" />
+    <Compile Include="Responses\RestAPIUpdateSensitiveResponse.cs" />
+    <Compile Include="Responses\RESTGetUserIdeaDetailsResponse.cs" />
+    <Compile Include="Responses\RoleMappingResponse.cs" />
+    <Compile Include="Responses\SubmitIdeaResponse.cs" />
+    <Compile Include="Utils\ConvertSize.cs" />
+    <Compile Include="Utils\CustomDate.cs" />
+    <Compile Include="Utils\CustomDateFormat.cs" />
+    <Compile Include="Utils\DatabaseUtils.cs" />
+    <Compile Include="Utils\DatabaseWrapper.cs" />
+    <Compile Include="Utils\DateTimeFormatUtils.cs" />
+    <Compile Include="Utils\IdeaDatabaseReadOnly.cs" />
+    <Compile Include="Utils\IdeaDatabaseReadWrite.cs" />
+    <Compile Include="Utils\EnumUtils.cs" />
+    <Compile Include="Utils\HttpWebRequestFactory.cs" />
+    <Compile Include="Utils\IHttpWebRequestFactory.cs" />
+    <Compile Include="Utils\IImplementation\IdeaAssignmentUtils.cs" />
+    <Compile Include="Utils\IImplementation\LogUtils.cs" />
+    <Compile Include="Utils\IImplementation\MetricsUtils.cs" />
+    <Compile Include="Utils\IImplementation\AttachmentUtils.cs" />
+    <Compile Include="Utils\IImplementation\AWSS3Util.cs" />
+    <Compile Include="Utils\IImplementation\CategoryUtils.cs" />
+    <Compile Include="Utils\IImplementation\ChallengeUtils.cs" />
+    <Compile Include="Utils\IImplementation\IdeaUtils.cs" />
+    <Compile Include="Utils\IImplementation\RoleUtils.cs" />
+    <Compile Include="Utils\IImplementation\StatusUtils.cs" />
+    <Compile Include="Utils\IImplementation\SubmitIdeaUtil.cs" />
+    <Compile Include="Utils\IImplementation\TagsUtils.cs" />
+    <Compile Include="Utils\IImplementation\UsersUtils.cs" />
+    <Compile Include="Utils\Interface\IIdeaAssignmentUtils.cs" />
+    <Compile Include="Utils\Interface\ILogUtils.cs" />
+    <Compile Include="Utils\Interface\IMetricsUtils.cs" />
+    <Compile Include="Utils\Interface\IAWSS3Util.cs" />
+    <Compile Include="Utils\Interface\IChallengeUtils.cs" />
+    <Compile Include="Utils\Interface\IideaCategoryUtils.cs" />
+    <Compile Include="Utils\Interface\IIdeaUtils.cs" />
+    <Compile Include="Utils\Interface\IAttachmentUtils.cs" />
+    <Compile Include="Utils\Interface\IRoleUtils.cs" />
+    <Compile Include="Utils\Interface\IStatusUtils.cs" />
+    <Compile Include="Utils\Interface\ISubmitIdeaUtil.cs" />
+    <Compile Include="Utils\Interface\ITagsUtils.cs" />
+    <Compile Include="Utils\Interface\IUsersUtils.cs" />
+    <Compile Include="Utils\IQueryUtils.cs" />
+    <Compile Include="Utils\IUserUtils.cs" />
+    <Compile Include="Utils\QueryUtils.cs" />
+    <Compile Include="Utils\RetryCounter.cs" />
+    <Compile Include="Utils\SettingsProvider.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="Utils\TokenDetails.cs" />
+    <Compile Include="Utils\TranslationUtils.cs" />
+    <Compile Include="Utils\UserUtils.cs" />
+    <Compile Include="Validation\EventCategoryValidation.cs" />
+    <Compile Include="Validation\FailureCodeValidation.cs" />
+    <Compile Include="Validation\PLCodeValidation.cs" />
+    <Compile Include="Validation\VersionStringValidation.cs" />
+    <Compile Include="Validation\CustomValidationAttribute.cs" />
+    <Compile Include="Validation\DateValidation.cs" />
+    <Compile Include="Validation\DbFieldsConstraints.cs" />
+    <Compile Include="Validation\DuplicatesValidation.cs" />
+    <Compile Include="Validation\EmailAddressValidation.cs" />
+    <Compile Include="Validation\EnumValidation.cs" />
+    <Compile Include="Validation\DbFieldValidation.cs" />
+    <Compile Include="Validation\IDbFieldsConstraints.cs" />
+    <Compile Include="Validation\NumberValidation.cs" />
+    <Compile Include="Validation\OperatingSystemValidation.cs" />
+    <Compile Include="Validation\PairValidation.cs" />
+    <Compile Include="Validation\ProductNumberValidation.cs" />
+    <Compile Include="Validation\RequiredValidation.cs" />
+    <Compile Include="Validation\SerialNumberValidation.cs" />
+    <Compile Include="Validation\StringValidation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\RequestBase.cs" />
+    <Compile Include="Validation\IUriValidationAttribute.cs" />
+    <Compile Include="Validation\ValidableObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Responses\Responses.csproj">
+      <Project>{7036eef0-26e4-4808-b544-d6c0021a8a30}</Project>
+      <Name>Responses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SettingsRepository\SettingsRepository.csproj">
+      <Project>{e26a7daf-2e0a-4ea3-8411-e8cad26fdbab}</Project>
+      <Name>SettingsRepository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_2.0|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\IdeaDatabase.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Report|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\IdeaDatabase.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19979</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60836/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

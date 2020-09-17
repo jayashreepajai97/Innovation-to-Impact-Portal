@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InnovationPortalModelStoreContainer" CdmEntityContainer="IdeaDatabaseDataContext">
+    <EntitySetMapping Name="AdmSettings">
+      <EntityTypeMapping TypeName="InnovationPortalModel.AdmSetting">
+        <MappingFragment StoreEntitySet="AdmSettings">
+          <ScalarProperty Name="ParamName" ColumnName="ParamName" />
+          <ScalarProperty Name="ParamType" ColumnName="ParamType" />
+          <ScalarProperty Name="StringValue" ColumnName="StringValue" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="NumValue" ColumnName="NumValue" />
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailTemplates">
+      <EntityTypeMapping TypeName="InnovationPortalModel.EmailTemplate">
+        <MappingFragment StoreEntitySet="EmailTemplates">
+          <ScalarProperty Name="EmailTemplatesId" ColumnName="EmailTemplatesId" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaAssignments">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaAssignment">
+        <MappingFragment StoreEntitySet="IdeaAssignments">
+          <ScalarProperty Name="IdeaAssignmentsId" ColumnName="IdeaAssignmentsId" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ReviewByUserId" ColumnName="ReviewByUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaAttachments">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaAttachment">
+        <MappingFragment StoreEntitySet="IdeaAttachment">
+          <ScalarProperty Name="IdeaAttachmentId" ColumnName="IdeaAttachmentId" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="AttachedFileName" ColumnName="AttachedFileName" />
+          <ScalarProperty Name="FileExtention" ColumnName="FileExtention" />
+          <ScalarProperty Name="FileSizeInByte" ColumnName="FileSizeInByte" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="FolderName" ColumnName="FolderName" />
+          <ScalarProperty Name="IntellectualPropertyId" ColumnName="IntellectualPropertyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaCategories">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaCategory">
+        <MappingFragment StoreEntitySet="IdeaCategories">
+          <ScalarProperty Name="IdeaCategorieId" ColumnName="IdeaCategorieId" />
+          <ScalarProperty Name="CategoriesName" ColumnName="CategoriesName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="AddedByUserId" ColumnName="AddedByUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaChallenges">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaChallenge">
+        <MappingFragment StoreEntitySet="IdeaChallenge">
+          <ScalarProperty Name="IdeaChallengeId" ColumnName="IdeaChallengeId" />
+          <ScalarProperty Name="ChallengeName" ColumnName="ChallengeName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="AddedByUserId" ColumnName="AddedByUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaComments">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaComment">
+        <MappingFragment StoreEntitySet="IdeaComment">
+          <ScalarProperty Name="IdeaCommentId" ColumnName="IdeaCommentId" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="CommentDescription" ColumnName="CommentDescription" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CommentByUserId" ColumnName="CommentByUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaCommentDiscussions">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaCommentDiscussion">
+        <MappingFragment StoreEntitySet="IdeaCommentDiscussion">
+          <ScalarProperty Name="DiscussionId" ColumnName="DiscussionId" />
+          <ScalarProperty Name="IdeaCommentId" ColumnName="IdeaCommentId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="DiscussionDescription" ColumnName="DiscussionDescription" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaContributors">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaContributor">
+        <MappingFragment StoreEntitySet="IdeaContributors">
+          <ScalarProperty Name="IdeaContributorsId" ColumnName="IdeaContributorsId" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ideas">
+      <EntityTypeMapping TypeName="InnovationPortalModel.Idea">
+        <MappingFragment StoreEntitySet="Ideas">
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsAttachment" ColumnName="IsAttachment" />
+          <ScalarProperty Name="IsSensitive" ColumnName="IsSensitive" />
+          <ScalarProperty Name="AttachmentCount" ColumnName="AttachmentCount" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="BusinessImpact" ColumnName="BusinessImpact" />
+          <ScalarProperty Name="Solution" ColumnName="Solution" />
+          <ScalarProperty Name="ChallengeId" ColumnName="ChallengeId" />
+          <ScalarProperty Name="GitRepo" ColumnName="GitRepo" />
+          <ScalarProperty Name="IsDraft" ColumnName="IsDraft" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaStatusLogs">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaStatusLog">
+        <MappingFragment StoreEntitySet="IdeaStatusLog">
+          <ScalarProperty Name="IdeaStatusLogId" ColumnName="IdeaStatusLogId" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="IdeaState" ColumnName="IdeaState" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedByUserId" ColumnName="ModifiedByUserId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaSubscribers">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaSubscriber">
+        <MappingFragment StoreEntitySet="IdeaSubscribers">
+          <ScalarProperty Name="IdeaSubscribersId" ColumnName="IdeaSubscribersId" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="TotalFollowers" ColumnName="TotalFollowers" />
+          <ScalarProperty Name="TotalRating" ColumnName="TotalRating" />
+          <ScalarProperty Name="IsBookmarked" ColumnName="IsBookmarked" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ideatags">
+      <EntityTypeMapping TypeName="InnovationPortalModel.Ideatag">
+        <MappingFragment StoreEntitySet="Ideatags">
+          <ScalarProperty Name="IdeatagId" ColumnName="IdeatagId" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="AddedByUserId" ColumnName="AddedByUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleMappings">
+      <EntityTypeMapping TypeName="InnovationPortalModel.RoleMapping">
+        <MappingFragment StoreEntitySet="RoleMapping">
+          <ScalarProperty Name="RoleMappingId" ColumnName="RoleMappingId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="InnovationPortalModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="S3AttachmentContainer">
+      <EntityTypeMapping TypeName="InnovationPortalModel.S3AttachmentContainer">
+        <MappingFragment StoreEntitySet="S3AttachmentContainer">
+          <ScalarProperty Name="S3AttachmentContainerId" ColumnName="S3AttachmentContainerId" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="AttachedFileName" ColumnName="AttachedFileName" />
+          <ScalarProperty Name="FolderName" ColumnName="FolderName" />
+          <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAuthentications">
+      <EntityTypeMapping TypeName="InnovationPortalModel.UserAuthentication">
+        <MappingFragment StoreEntitySet="UserAuthentication">
+          <ScalarProperty Name="UserAuthenticationId" ColumnName="UserAuthenticationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TokenMD5" ColumnName="TokenMD5" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="IsHPID" ColumnName="IsHPID" />
+          <ScalarProperty Name="ClientApplication" ColumnName="ClientApplication" />
+          <ScalarProperty Name="ClientVersion" ColumnName="ClientVersion" />
+          <ScalarProperty Name="ClientPlatform" ColumnName="ClientPlatform" />
+          <ScalarProperty Name="CallerId" ColumnName="CallerId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="UseCaseGroup" ColumnName="UseCaseGroup" />
+          <ScalarProperty Name="LogoutDate" ColumnName="LogoutDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaIntellectualProperties">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaIntellectualProperty">
+        <MappingFragment StoreEntitySet="IdeaIntellectualProperty">
+          <ScalarProperty Name="InventionReference" ColumnName="InventionReference" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsAttachment" ColumnName="IsAttachment" />
+          <ScalarProperty Name="AttachmentCount" ColumnName="AttachmentCount" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="PatentId" ColumnName="PatentId" />
+          <ScalarProperty Name="ApplicationNumber" ColumnName="ApplicationNumber" />
+          <ScalarProperty Name="FiledDate" ColumnName="FiledDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RecordId" ColumnName="RecordId" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="IntellectualId" ColumnName="IntellectualId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaArchiveHistories">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaArchiveHistory">
+        <MappingFragment StoreEntitySet="IdeaArchiveHistory">
+          <ScalarProperty Name="ArchiveDate" ColumnName="ArchiveDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="IdeaArchiveHistoryId" ColumnName="IdeaArchiveHistoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdeaLogs">
+      <EntityTypeMapping TypeName="InnovationPortalModel.IdeaLog">
+        <MappingFragment StoreEntitySet="IdeaLogs">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ArchiveDate" ColumnName="ArchiveDate" />
+          <ScalarProperty Name="OriginAPI" ColumnName="OriginAPI" />
+          <ScalarProperty Name="OriginMethod" ColumnName="OriginMethod" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="LogMessage" ColumnName="LogMessage" />
+          <ScalarProperty Name="IdeaId" ColumnName="IdeaId" />
+          <ScalarProperty Name="IdeaLogsId" ColumnName="IdeaLogsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="InnovationPortalModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Locale" ColumnName="Locale" />
+          <ScalarProperty Name="OrigClientId" ColumnName="OrigClientId" />
+          <ScalarProperty Name="PrimaryUse" ColumnName="PrimaryUse" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ONEHPUserId" ColumnName="ONEHPUserId" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="TokenExpireTime" ColumnName="TokenExpireTime" />
+          <ScalarProperty Name="SessionToken" ColumnName="SessionToken" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

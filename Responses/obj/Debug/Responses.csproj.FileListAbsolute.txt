@@ -1,0 +1,15 @@
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\Responses.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\Responses.pdb
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\Castle.Core.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\Moq.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\Newtonsoft.Json.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\SettingsRepository.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\SettingsRepository.pdb
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\Moq.pdb
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\Moq.xml
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\Newtonsoft.Json.xml
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\obj\Debug\Responses.csprojAssemblyReference.cache
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\obj\Debug\Responses.csproj.CopyComplete
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\obj\Debug\Responses.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\obj\Debug\Responses.pdb
+D:\Innovation-portal-backend(Hp)\idea-web-api\Responses\bin\Debug\Hpcs.DependencyInjector.dll

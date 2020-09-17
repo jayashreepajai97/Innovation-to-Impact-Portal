@@ -1,0 +1,99 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<root>
+   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+      <xsd:element name="root" msdata:IsDataSet="true">
+         <xsd:complexType>
+            <xsd:choice maxOccurs="unbounded">
+               <xsd:element name="metadata">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" use="required" type="xsd:string" />
+                     <xsd:attribute name="type" type="xsd:string" />
+                     <xsd:attribute name="mimetype" type="xsd:string" />
+                     <xsd:attribute ref="xml:space" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="assembly">
+                  <xsd:complexType>
+                     <xsd:attribute name="alias" type="xsd:string" />
+                     <xsd:attribute name="name" type="xsd:string" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="data">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                        <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                     <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                     <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                     <xsd:attribute ref="xml:space" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="resheader">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" use="required" />
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:choice>
+         </xsd:complexType>
+      </xsd:element>
+   </xsd:schema>
+   <resheader name="resmimetype">
+      <value>text/microsoft-resx</value>
+   </resheader>
+   <resheader name="version">
+      <value>2.0</value>
+   </resheader>
+   <resheader name="reader">
+      <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <resheader name="writer">
+      <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <data name="HpsaGenesisInstantInk_Descr" xml:space="preserve">
+      <value>Spar opptil 70% på blekk! Skriveren bestiller blekk automatisk når det er lite igjen.</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_ManageText" xml:space="preserve">
+      <value>Instant Ink-oversikten</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_Promo" xml:space="preserve">
+      <value>Få 3 måneders gratis prøvetid når du registrerer deg, ved å klikke nedenfor.</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_SubscribeText" xml:space="preserve">
+      <value>Registrer deg</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Descr" xml:space="preserve">
+      <value>Har garantien utløpt? Få øyeblikkelig profesjonell støtte for HP-produktet ditt.</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Promo" xml:space="preserve">
+      <value>
+NOK 185,00 for skrivere
+NOK 380,00 for PC-er/nettbrett</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_SubscribeText" xml:space="preserve">
+      <value>Kjøp nå</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Title" xml:space="preserve">
+      <value>HP teknisk støtte over telefon</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Descr" xml:space="preserve">
+      <value>McAfee LiveSafe gir fullstendig beskyttelse av identitet og data mot virus og tyveri.</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Promo" xml:space="preserve">
+      <value>Starter på NOK 469,00</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_SubscribeText" xml:space="preserve">
+      <value>Kjøp nå</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Title" xml:space="preserve">
+      <value>McAfee</value>
+   </data>
+</root>

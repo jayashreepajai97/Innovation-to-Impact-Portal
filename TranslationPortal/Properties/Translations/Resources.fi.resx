@@ -1,0 +1,108 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<root>
+   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+      <xsd:element name="root" msdata:IsDataSet="true">
+         <xsd:complexType>
+            <xsd:choice maxOccurs="unbounded">
+               <xsd:element name="metadata">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" use="required" type="xsd:string" />
+                     <xsd:attribute name="type" type="xsd:string" />
+                     <xsd:attribute name="mimetype" type="xsd:string" />
+                     <xsd:attribute ref="xml:space" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="assembly">
+                  <xsd:complexType>
+                     <xsd:attribute name="alias" type="xsd:string" />
+                     <xsd:attribute name="name" type="xsd:string" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="data">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                        <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                     <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                     <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                     <xsd:attribute ref="xml:space" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="resheader">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" use="required" />
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:choice>
+         </xsd:complexType>
+      </xsd:element>
+   </xsd:schema>
+   <resheader name="resmimetype">
+      <value>text/microsoft-resx</value>
+   </resheader>
+   <resheader name="version">
+      <value>2.0</value>
+   </resheader>
+   <resheader name="reader">
+      <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <resheader name="writer">
+      <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <data name="HpsaGenesisInstantInk_Descr" xml:space="preserve">
+      <value>SÄÄSTÄ jopa 70% mustekuluista! Tulostin tilaa automaattisesti mustetta, kun se on vähissä.</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_ManageText" xml:space="preserve">
+      <value>Instant Ink–aloitussivulle</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_Promo" xml:space="preserve">
+      <value>Saat 3 kuukauden maksuttoman kokeilujakson, kun rekisteröidyt napsauttamalla alla olevaa painiketta.</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_SubscribeText" xml:space="preserve">
+      <value>Rekisteröidy</value>
+   </data>
+   <data name="HpsaGenesisSupportCoverage_Descr" xml:space="preserve">
+      <value>Puhelintuki ja vianmäärityksen etätuki sekä laitteiston korjauspalvelu.</value>
+   </data>
+   <data name="HpsaGenesisSupportCoverage_SubscribeText" xml:space="preserve">
+      <value>Laajenna nyt</value>
+   </data>
+   <data name="HpsaGenesisSupportCoverage_Title" xml:space="preserve">
+      <value>Tuen laajennukset</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Descr" xml:space="preserve">
+      <value>Onko takuusi umpeutunut? Saat ammattimaista tukea HP-tuotteellesi hetkessä.</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Promo" xml:space="preserve">
+      <value>
+Tulostimet 19,90 €
+PC:t ja tabletit 39,99 €</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_SubscribeText" xml:space="preserve">
+      <value>Osta nyt</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Title" xml:space="preserve">
+      <value>HP:n tekninen puhelintukipalvelu</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Descr" xml:space="preserve">
+      <value>McAfee LiveSafe suojaa henkilöllisyyttäsi ja tietojasi kattavasti varkauksilta ja viruksilta.</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Promo" xml:space="preserve">
+      <value>Alkaen 45,99 €</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_SubscribeText" xml:space="preserve">
+      <value>Osta nyt</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Title" xml:space="preserve">
+      <value>McAfee</value>
+   </data>
+</root>

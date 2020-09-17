@@ -1,0 +1,7 @@
+D:\Innovation-portal-backend(Hp)\idea-web-api\SettingsRepository\bin\Debug\SettingsRepository.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\SettingsRepository\bin\Debug\SettingsRepository.pdb
+D:\Innovation-portal-backend(Hp)\idea-web-api\SettingsRepository\obj\Debug\SettingsRepository.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\SettingsRepository\obj\Debug\SettingsRepository.pdb
+D:\Innovation-portal-backend(Hp)\idea-web-api\SettingsRepository\bin\Debug\Hpcs.DependencyInjector.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\SettingsRepository\obj\Debug\SettingsRepository.csproj.CopyComplete
+D:\Innovation-portal-backend(Hp)\idea-web-api\SettingsRepository\obj\Debug\SettingsRepository.csprojAssemblyReference.cache

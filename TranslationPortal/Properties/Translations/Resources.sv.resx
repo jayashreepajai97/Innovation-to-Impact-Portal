@@ -1,0 +1,108 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<root>
+   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+      <xsd:element name="root" msdata:IsDataSet="true">
+         <xsd:complexType>
+            <xsd:choice maxOccurs="unbounded">
+               <xsd:element name="metadata">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" use="required" type="xsd:string" />
+                     <xsd:attribute name="type" type="xsd:string" />
+                     <xsd:attribute name="mimetype" type="xsd:string" />
+                     <xsd:attribute ref="xml:space" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="assembly">
+                  <xsd:complexType>
+                     <xsd:attribute name="alias" type="xsd:string" />
+                     <xsd:attribute name="name" type="xsd:string" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="data">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                        <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                     <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                     <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                     <xsd:attribute ref="xml:space" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="resheader">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" use="required" />
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:choice>
+         </xsd:complexType>
+      </xsd:element>
+   </xsd:schema>
+   <resheader name="resmimetype">
+      <value>text/microsoft-resx</value>
+   </resheader>
+   <resheader name="version">
+      <value>2.0</value>
+   </resheader>
+   <resheader name="reader">
+      <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <resheader name="writer">
+      <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <data name="HpsaGenesisInstantInk_Descr" xml:space="preserve">
+      <value>Upp till 70% RABATT på bläck! Skrivaren beställer automatiskt bläck när bläcknivån är låg.</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_ManageText" xml:space="preserve">
+      <value>Instant Ink-instrumentpanelen</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_Promo" xml:space="preserve">
+      <value>Om du klickar nedan får du en tre månaders kostnadsfri testversion när du registrerar dig.</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_SubscribeText" xml:space="preserve">
+      <value>Registrera dig</value>
+   </data>
+   <data name="HpsaGenesisSupportCoverage_Descr" xml:space="preserve">
+      <value>Telefon- och fjärrdiagnostiksupport med reparation av maskinvaran.</value>
+   </data>
+   <data name="HpsaGenesisSupportCoverage_SubscribeText" xml:space="preserve">
+      <value>Förläng nu</value>
+   </data>
+   <data name="HpsaGenesisSupportCoverage_Title" xml:space="preserve">
+      <value>Supporttäckning</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Descr" xml:space="preserve">
+      <value>Har garantin har löpt ut? Snabb och professionell support för din HP-produkt.</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Promo" xml:space="preserve">
+      <value>
+190,00 SEK för skrivare
+370,00 SEK för datorer/surfplattor</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_SubscribeText" xml:space="preserve">
+      <value>Köp nu</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Title" xml:space="preserve">
+      <value>HP Teknisk telefonsupport</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Descr" xml:space="preserve">
+      <value>Med McAfee LiveSafe får du ett komplett skydd som skyddar din identitet och dina data mot stöld och virus.</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Promo" xml:space="preserve">
+      <value>Från 469,00 SEK</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_SubscribeText" xml:space="preserve">
+      <value>Köp nu</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Title" xml:space="preserve">
+      <value>McAfee</value>
+   </data>
+</root>

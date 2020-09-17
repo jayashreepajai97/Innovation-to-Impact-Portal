@@ -1,0 +1,28 @@
+{
+  "RestrictedMethods": [
+    {
+      "ActionName": "casesext",
+      "Method": "POST"
+    },
+    {
+      "ActionName": "casesext",
+      "Method": "OPTIONS"
+    },
+    {
+      "ActionName": "casesext/{CaseId}",
+      "Method": "GET"
+    },
+    {
+      "ActionName": "casesext/{CaseId}",
+      "Method": "OPTIONS"
+    },
+    {
+      "ActionName": "devices/{DeviceId}/support/{TopicId}",
+      "Method": "GET"
+    },
+    {
+      "ActionName": "devices/{DeviceId}/support/{TopicId}",
+      "Method": "OPTIONS"
+    }
+  ]
+}

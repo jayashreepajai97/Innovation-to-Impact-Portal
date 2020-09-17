@@ -1,0 +1,108 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<root>
+   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+      <xsd:element name="root" msdata:IsDataSet="true">
+         <xsd:complexType>
+            <xsd:choice maxOccurs="unbounded">
+               <xsd:element name="metadata">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" use="required" type="xsd:string" />
+                     <xsd:attribute name="type" type="xsd:string" />
+                     <xsd:attribute name="mimetype" type="xsd:string" />
+                     <xsd:attribute ref="xml:space" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="assembly">
+                  <xsd:complexType>
+                     <xsd:attribute name="alias" type="xsd:string" />
+                     <xsd:attribute name="name" type="xsd:string" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="data">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                        <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                     <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                     <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                     <xsd:attribute ref="xml:space" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="resheader">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" use="required" />
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:choice>
+         </xsd:complexType>
+      </xsd:element>
+   </xsd:schema>
+   <resheader name="resmimetype">
+      <value>text/microsoft-resx</value>
+   </resheader>
+   <resheader name="version">
+      <value>2.0</value>
+   </resheader>
+   <resheader name="reader">
+      <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <resheader name="writer">
+      <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <data name="HpsaGenesisInstantInk_Descr" xml:space="preserve">
+      <value>Économisez jusqu'à 70% sur vos coûts d'impression. Votre imprimante commande automatiquement une cartouche lorsque le niveau d'encre est bas.</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_ManageText" xml:space="preserve">
+      <value>Tableau de bord Instant Ink</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_Promo" xml:space="preserve">
+      <value>Obtenez 3 mois d'essai gratuit à partir de votre inscription en cliquant ci-dessous.</value>
+   </data>
+   <data name="HpsaGenesisInstantInk_SubscribeText" xml:space="preserve">
+      <value>S’inscrire maintenant</value>
+   </data>
+   <data name="HpsaGenesisSupportCoverage_Descr" xml:space="preserve">
+      <value>Assistance et diagnostics par téléphone ou à distance avec réparation matérielle.</value>
+   </data>
+   <data name="HpsaGenesisSupportCoverage_SubscribeText" xml:space="preserve">
+      <value>Prolonger tout de suite</value>
+   </data>
+   <data name="HpsaGenesisSupportCoverage_Title" xml:space="preserve">
+      <value>Support</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Descr" xml:space="preserve">
+      <value>Votre garantie a expiré ? Assistance rapide et professionelle pour votre produit HP.</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Promo" xml:space="preserve">
+      <value>
+19,90 € pour les imprimantes
+39,99 € pour les PC/tablettes</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_SubscribeText" xml:space="preserve">
+      <value>Acheter tout de suite</value>
+   </data>
+   <data name="HpsaGenesisTechnicalSupport_Title" xml:space="preserve">
+      <value>Assistance technique téléphonique HP</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Descr" xml:space="preserve">
+      <value>McAfee LiveSafe assure une protection complète, en protégeant votre identité et vos données contre le vol et les virus.</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Promo" xml:space="preserve">
+      <value>À partir de 45,99 €</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_SubscribeText" xml:space="preserve">
+      <value>Acheter tout de suite</value>
+   </data>
+   <data name="HpsaGenesisVirusProtection_Title" xml:space="preserve">
+      <value>Antivirus</value>
+   </data>
+</root>

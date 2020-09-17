@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a9308d01b1ad4265b2e1733d2070dfe0" Name="Diagram1">
+        <EntityTypeShape EntityType="InnovationPortalModel.AdmSetting" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.EmailTemplate" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaAssignment" Width="1.5" PointX="3" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaAttachment" Width="1.5" PointX="10.5" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaCategory" Width="1.5" PointX="3" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaChallenge" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaComment" Width="1.5" PointX="7.5" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaCommentDiscussion" Width="1.5" PointX="12.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaContributor" Width="1.5" PointX="7.5" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.Idea" Width="1.5" PointX="5.25" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaStatusLog" Width="1.5" PointX="7.5" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaSubscriber" Width="1.5" PointX="10.5" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.Ideatag" Width="1.5" PointX="13.5" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.RoleMapping" Width="1.5" PointX="8" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.Role" Width="1.5" PointX="5.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.S3AttachmentContainer" Width="1.5" PointX="7.5" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.UserAuthentication" Width="1.5" PointX="3" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InnovationPortalModel.User" Width="1.5" PointX="0.75" PointY="18.375" IsExpanded="true" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaAssignments_IdeaAssignmentsId_Ideas_IdeaId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaAssignments_ReviewByUserId_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaAttachment_Ideas_IdeaId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaCategories_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_Ideas_CategoryId_Ideacategory_IdeaCategorieId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_Ideas_ChallengeId_IdeaChallenge_IdeaChallengeId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_ICD_IdeaCommentId_IdeaComment_IdeaCommentId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaComment_Ideas_IdeaId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaComment_Users_CommentByUserId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaCommentDiscussion_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.Fk_IdeaContributors_IdeaId_Ideas_IdeaId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.Fk_IdeaContributors_UserId_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_Ideas_UserId_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaStatusLog_Ideas_IdeaId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.Fk_IdeaSubscribers_IdeaId_Ideas_IdeaId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.Fk_Ideatags_IdeaId_Ideas_IdeaId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_S3AttachmentContainer_Ideas_IdeaId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.Fk_IdeaSubscribers_ModifiedBy_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.Fk_Ideatags_ModifiedBy_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_RoleMapping_Roles_RoleId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_RoleMapping_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="InnovationPortalModel.FK_UserAuthentication_Users_UserId" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaIntellectualProperty" Width="1.5" PointX="10.5" PointY="15" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IA_IntellectualPropertyId_IProperty_IntellectualId" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaIntellectualProperty_Ideas_IdeaId" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaIntellectualProperty_UserId_Users_UserId" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaArchiveHistory" Width="1.5" PointX="13.5" PointY="24.125" />
+        <EntityTypeShape EntityType="InnovationPortalModel.IdeaLog" Width="1.5" PointX="13.5" PointY="27.75" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaArchiveHistory_IdeaId_Ideas_IdeaId" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaArchiveHistory_UserId_Users_UserId" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaLogs_IdeaId_Ideas_IdeaId" />
+        <AssociationConnector Association="InnovationPortalModel.FK_IdeaLogs_UserId_Users_UserId" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

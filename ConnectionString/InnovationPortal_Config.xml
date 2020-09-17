@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DatabaseConnections>          
+  
+  <DatabaseConnection name="CPMETAConnectionReadWriteString"
+       connectionString="metadata=res://*/DataContext.IdeaDatabase.csdl|res://*/DataContext.IdeaDatabase.ssdl|res://*/DataContext.IdeaDatabase.msl;provider=System.Data.SqlClient;provider connection string=&quot;server=10.9.40.61;user id=sa;password=AgreeYa12!@; persist security info=True;database=InnovationPortal;MultipleActiveResultSets=True;App=EntityFramework&quot;" 
+	   providerName="System.Data.EntityClient" />
+ 
+</DatabaseConnections>

@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IdeaDatabase</name>
+    </assembly>
+    <members>
+        <member name="P:IdeaDatabase.Interchange.FailureIdInterchange.HpSerialNumber">
+            <summary>
+            Get and Set HP Serial Number
+            </summary>
+        </member>
+        <member name="P:IdeaDatabase.Interchange.FailureIdInterchange.FailureIdStartDate">
+            <summary>
+            Get and Set Warranty Start Date
+            </summary>
+        </member>
+        <member name="P:IdeaDatabase.Interchange.FailureIdInterchange.TestDate">
+            <summary>
+            Get and Set Test Date
+            </summary>
+        </member>
+        <member name="P:IdeaDatabase.Interchange.FailureIdInterchange.FailureCode">
+            <summary>
+            Get and Set Failure Code
+            </summary>
+        </member>
+        <member name="P:IdeaDatabase.Interchange.FailureIdInterchange.FailureIdVersion">
+            <summary>
+            Get and Set Warranty Id Version
+            </summary>
+        </member>
+        <member name="P:IdeaDatabase.Interchange.FailureIdInterchange.FailureIdTag">
+            <summary>
+            Get and Set WarrantyIdTag
+            </summary>
+        </member>
+        <member name="T:IdeaDatabase.Responses.Faults">
+            <summary>
+            This class should contain all possible faults, that this service can report. Everywhere when response is created
+            developer should use Fault from this list instead of creating one on their own. 
+            </summary>
+        </member>
+        <member name="P:IdeaDatabase.Responses.Faults.ServerIsBusy">
+            <summary>
+            Fault returned when server is unable to perform an operation
+            </summary>
+        </member>
+        <member name="P:IdeaDatabase.Responses.Faults.MissingRequestContent">
+            <summary>
+            Fault returned when invalid storage, drive or partition is provided
+            </summary>
+        </member>
+        <member name="P:IdeaDatabase.Responses.Faults.EmptyFailureCode">
+            <summary>
+            Fault returned when error, while encoding failure info.
+            </summary>
+        </member>
+        <member name="P:IdeaDatabase.Responses.Faults.EASServiceError">
+            <summary>
+            Errors from EAS service
+            </summary>
+        </member>
+        <member name="M:IdeaDatabase.Utils.DateTimeFormatUtils.FormatDate(System.String,System.String)">
+            <summary>
+            Returns date in formate adequate to given localization
+            </summary>
+            <param name="baseDateValue">Raw date format</param>
+            <param name="localeId">Localization</param>
+            <returns>Formatted date if raw Date is proper and format was found for given localization. Otherwise returns empty string.</returns>
+        </member>
+        <member name="M:IdeaDatabase.Utils.DateTimeFormatUtils.FormatToDateWithTimestamp(System.Nullable{System.DateTime})">
+            <summary>
+            Returns date in formate adequate to given localization
+            </summary>
+            <param name="baseDateValue">Raw date format</param>
+            <returns>Formatted date if baseDateValue is proper and was successfully formated to date and time stamp. Otherwise returns null.</returns>
+        </member>
+        <member name="M:IdeaDatabase.Utils.DateTimeFormatUtils.SelectDateFormat(System.String)">
+            <summary>
+            Method verifies locale and selects adequate Date format
+            </summary>
+            <param name="localeId">Localization</param>
+            <returns>Date format adequate for given localization</returns>
+        </member>
+        <member name="M:IdeaDatabase.Utils.DateTimeFormatUtils.GetIso8601String(System.Nullable{System.DateTime})">
+            <summary>
+            Converts the nullable DateTime to ISO8601 format datetime stamp
+            </summary>
+            <param name="dateTimeStamp">The nullable DateTime object</param>
+            <returns>The datetime representation in ISO8601 format</returns>
+        </member>
+        <member name="M:IdeaDatabase.Utils.DateTimeFormatUtils.GetDateTime(System.String)">
+            <summary>
+            Converts DateTime string to nullable DateTime object
+            </summary>
+            <param name="dateTimeStamp">Input string to parse into DateTime</param>
+            <returns>DateTime object representing the time given in string</returns>
+        </member>
+        <member name="M:IdeaDatabase.Utils.DateTimeFormatUtils.GetIso8601DateTime(System.String)">
+            <summary>
+            Converts the nullable DateTime to ISO8601 format datetime stamp
+            </summary>
+            <param name="dateTimeStamp">The nullable DateTime object</param>
+            <returns>The datetime representation in ISO8601 format in DateTime</returns>
+        </member>
+        <member name="F:IdeaDatabase.Utils.TokenDetails.RefreshTokenType">
+            <summary>
+            info how refresh token was created: 
+            0 - by standard login with credentials
+            1 - bu AUTH with access code and redirect URL
+            </summary>
+        </member>
+        <member name="M:IdeaDatabase.Utils.TranslationUtils.Locale(System.String,System.String)">
+            <summary>
+            Checks Language and Country codes and builds proper 'Locale' string
+            </summary>
+            <param name="LanguageCode"></param>
+            <param name="CountryCode"></param>
+            <returns>If Language and Country are proper, then returns locale based on those values. Otherwise returns default 'en-US'</returns>
+        </member>
+        <member name="M:IdeaDatabase.Utils.TranslationUtils.SplitLocale(System.String,System.String@,System.String@)">
+            <summary>
+            Splits the locale string in language and country code. Defaults to "en" and "US" if locale is not valid
+            </summary>
+            <param name="locale">The locale string to split</param>
+            <param name="languageCode">Extracted language code from the input locale</param>
+            <param name="countryCode">Extracted country code from the input locale</param>
+        </member>
+        <member name="P:Credentials.AccessCredentials.SessionToken">
+            <summary>
+            After successful login this field should be returned by server and used later 
+            to access other methods
+            </summary>
+        </member>
+        <member name="P:Credentials.AccessCredentials.CallerId">
+            <summary>
+            Identification of the calling point: serial number of the device from which user logs in or text 'portal' in case of web-login
+            </summary>
+        </member>
+        <member name="P:Credentials.AccessCredentials.Token">
+            <summary>
+            Real HPID token, hidden and not shown in response
+            </summary>
+        </member>
+        <member name="P:Credentials.AccessCredentials.UseCaseGroup">
+            <summary>
+            UseCaseGroup is set by reading it from DB, It's hidden and not shown in response
+            </summary>
+        </member>
+        <member name="P:Credentials.AccessCredentials.LoginDate">
+            <summary>
+            LoginDate is set by reading it from DB, It's hidden and not shown in response and will be use for calculating session timeout.
+            </summary>
+        </member>
+    </members>
+</doc>

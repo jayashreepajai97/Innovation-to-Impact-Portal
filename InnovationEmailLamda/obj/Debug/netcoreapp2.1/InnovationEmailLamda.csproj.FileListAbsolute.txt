@@ -1,0 +1,10 @@
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\bin\Debug\netcoreapp2.1\InnovationEmailLamda.deps.json
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\bin\Debug\netcoreapp2.1\InnovationEmailLamda.runtimeconfig.json
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\bin\Debug\netcoreapp2.1\InnovationEmailLamda.runtimeconfig.dev.json
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\bin\Debug\netcoreapp2.1\InnovationEmailLamda.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\bin\Debug\netcoreapp2.1\InnovationEmailLamda.pdb
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\obj\Debug\netcoreapp2.1\InnovationEmailLamda.AssemblyInfoInputs.cache
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\obj\Debug\netcoreapp2.1\InnovationEmailLamda.AssemblyInfo.cs
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\obj\Debug\netcoreapp2.1\InnovationEmailLamda.dll
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\obj\Debug\netcoreapp2.1\InnovationEmailLamda.pdb
+D:\Innovation-portal-backend(Hp)\idea-web-api\InnovationEmailLamda\obj\Debug\netcoreapp2.1\InnovationEmailLamda.csprojAssemblyReference.cache
